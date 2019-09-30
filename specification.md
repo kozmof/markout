@@ -58,7 +58,7 @@ false : boolean false
 -
 ```
 
-### Implemention
+### implementation
 - React: 
 
 
@@ -68,7 +68,7 @@ Annotations are not rendered. They are used as a meta data.
 1. Draft
 2. TODO
 3. Index
-### Implemention
+### implementation
 - React: 
 
 ## 2.1 Draft Annotation
@@ -83,7 +83,7 @@ HEADER
 ### Example
 this is a draft section.
 ```
-### Implemention
+### implementation
 - React: 
 
 ## 2.2 TO-DO Annotation
@@ -91,7 +91,7 @@ this is a draft section.
 ```
 !TODO <text>
 ```
-### Implemention
+### implementation
 - React: 
 
 ## 2.3 Index Annotation
@@ -99,7 +99,7 @@ this is a draft section.
 ```
 {{<term>}}
 ```
-### Implemention
+### implementation
 - React: 
 
 ## 3. Timeline
@@ -118,7 +118,7 @@ this is a draft section.
 - [H:M:S] <text>
 ```
 
-### Implemention
+### implementation
 - React: 
 
 ## 4. Column
@@ -133,7 +133,7 @@ this is a draft section.
 }!
 
 ```
-### Implemention
+### implementation
 - React: 
 
 ## 5. Card
@@ -144,7 +144,7 @@ this is a draft section.
 ]!
 ```
 
-### Implemention
+### implementation
 - React: 
 
 ## 6. Macro
@@ -157,7 +157,7 @@ this is a draft section.
 ```
 table_of_contents!(HEADER)
 ```
-### Implemention
+### implementation
 - React: 
 
 ## 6.2 Index
@@ -166,7 +166,7 @@ Render annotated terms
 ```
 index!()
 ```
-### Implemention
+### implementation
 - React: 
 
 ## 7. Insert
@@ -177,7 +177,7 @@ index!()
 ```
 \insert(PATH)
 ```
-### Implemention
+### implementation
 - React: 
 
 ## 8. Fold
@@ -186,7 +186,7 @@ index!()
 \fold(true)
 HEADER
 ```
-### Implemention
+### implementation
 - React: 
 
 ## 9. Icon
@@ -195,7 +195,7 @@ HEADER
 \import('custom_icons')
 :expression:
 ```
-### Implemention
+### implementation
 - React: 
 
 ## 10. Footnote 
@@ -204,6 +204,6 @@ HEADER
 <text>[i<unsigned_number>]
 [i<u>] <text>
 ```
-### Implemention
+### implementation
 - React: 
 ---
