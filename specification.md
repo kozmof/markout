@@ -164,7 +164,7 @@ table_of_contents!(HEADER)
 Render annotated terms
 ### Format
 ```
-\index!()
+index!()
 ```
 ### Implemention
 - React: 
