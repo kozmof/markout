@@ -1,4 +1,4 @@
-# [Draft] Markout Specification v0.1.0
+# [Draft] Markout Specification v0.2.0
 Last revision: 2019-10-01
 
 ## Table of Contents
@@ -97,8 +97,9 @@ this is a draft section.
 ## 2.3 Index Annotation
 ### Format
 ```
-{{<term>}}
+!{<term>}
 ```
+
 ### implementation
 - React: 
 
