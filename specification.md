@@ -63,7 +63,7 @@ false : boolean false
 
 
 ## 2. Annotations
-Annotations are not rendered. They are uses as a meta data.
+Annotations are not rendered. They are used as a meta data.
 ### Types
 1. Draft
 2. TODO
@@ -102,7 +102,7 @@ this is a draft section.
 ### Implemention
 - React: 
 
-## 3. Timeline``
+## 3. Timeline
 ### Format 1
 ```
 - [YYYY/mm/dd H:M:S] <text>
@@ -161,9 +161,10 @@ table_of_contents!(HEADER)
 - React: 
 
 ## 6.2 Index
+Render annotated terms
 ### Format
 ```
-\index(<text>)
+\index!()
 ```
 ### Implemention
 - React: 
