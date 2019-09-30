@@ -1,5 +1,5 @@
 # [Draft] Markout Specification v0.1.0
-Last revision: 2019-09-29
+Last revision: 2019-10-01
 
 ## Table of Contents
 - [0. Principle](#0.-Principle)
