@@ -50,11 +50,11 @@ false : boolean false
 =
 : content_a_1
 : content_b_1
-: contetn_c_1
+: content_c_1
 -
 : content_a_2
 : content_b_2
-: contetn_c_2
+: content_c_2
 -
 ```
 
