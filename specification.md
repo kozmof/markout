@@ -7,6 +7,7 @@ Last revision: 2019-09-29
 - [2. Annotations](#2.-Annotations)
   - [2.1 Draft Annotation](#2.1-Draft-Annotation)
   - [2.2 TO-DO Annotation](#2.2-TO-DO-Annotation)
+  - [2.3 Index Annotation](#2.3-index-Annotation)
 - [3. Timeline](#3.-Timeline)
 - [4. Column](#4.-Column)
 - [5. Card](#5.-Card)
@@ -96,12 +97,12 @@ this is a draft section.
 ## 2.3 Index Annotation
 ### Format
 ```
-{<text>}
+{{<term>}}
 ```
 ### Implemention
 - React: 
 
-## 3. Timeline
+## 3. Timeline``
 ### Format 1
 ```
 - [YYYY/mm/dd H:M:S] <text>
