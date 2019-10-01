@@ -1,5 +1,5 @@
-# [Draft] Markout Specification v0.2.0
-Last revision: 2019-10-01
+# [Draft] Markout Specification v0.2.1
+Last revision: 2019-10-02
 
 ## Table of Contents
 - [0. Principle](#0.-Principle)
@@ -59,7 +59,7 @@ false : boolean false
 ```
 
 ### implementation
-- React: 
+- TypeScript: 
 
 
 ## 2. Annotations
@@ -69,7 +69,7 @@ Annotations are not rendered. They are used as a meta data.
 2. TODO
 3. Index
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 2.1 Draft Annotation
 ### Format
@@ -84,7 +84,7 @@ HEADER
 this is a draft section.
 ```
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 2.2 TO-DO Annotation
 ### Format
@@ -92,7 +92,7 @@ this is a draft section.
 !TODO <text>
 ```
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 2.3 Index Annotation
 ### Format
@@ -101,7 +101,7 @@ this is a draft section.
 ```
 
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 3. Timeline
 ### Format 1
@@ -120,7 +120,7 @@ this is a draft section.
 ```
 
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 4. Column
 ### Format
@@ -135,7 +135,7 @@ this is a draft section.
 
 ```
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 5. Card
 ### Format
@@ -146,7 +146,7 @@ this is a draft section.
 ```
 
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 6. Macro
 ### Types
@@ -159,7 +159,7 @@ this is a draft section.
 table_of_contents!(HEADER)
 ```
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 6.2 Index
 Render annotated terms
@@ -168,7 +168,7 @@ Render annotated terms
 index!()
 ```
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 7. Insert
 ### Format
@@ -179,7 +179,7 @@ index!()
 \insert(PATH)
 ```
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 8. Fold
 ### Format
@@ -188,7 +188,7 @@ index!()
 HEADER
 ```
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 9. Icon
 ### Format
@@ -197,7 +197,7 @@ HEADER
 :expression:
 ```
 ### implementation
-- React: 
+- TypeScript: 
 
 ## 10. Footnote 
 ### Format
@@ -206,5 +206,5 @@ HEADER
 [i<u>] <text>
 ```
 ### implementation
-- React: 
+- TypeScript: 
 ---
