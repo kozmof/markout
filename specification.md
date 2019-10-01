@@ -59,7 +59,7 @@ false : boolean false
 ```
 
 ### implementation
-- TypeScript: 
+- TypeScript: https://github.com/kozmof/markout/blob/master/implementations/ts/TableParser.ts
 
 
 ## 2. Annotations
