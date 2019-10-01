@@ -2,22 +2,22 @@
 Last revision: 2019-10-02
 
 ## Table of Contents
-- [0. Principle](#0.-Principle)
-- [1. Table](#1.-Table)
-- [2. Annotations](#2.-Annotations)
-  - [2.1 Draft Annotation](#2.1-Draft-Annotation)
-  - [2.2 TO-DO Annotation](#2.2-TO-DO-Annotation)
-  - [2.3 Index Annotation](#2.3-index-Annotation)
-- [3. Timeline](#3.-Timeline)
-- [4. Column](#4.-Column)
-- [5. Card](#5.-Card)
-- [6. Macro](#6.-Macro)
-  - [6.1 Table of Contents](#6.1-table-of-contents)
-  - [6.2 Index](#6.2-Index)
-- [7. Insert](#7.-Insert)
-- [8. Fold](#8.-Fold)
-- [9. Icon](#9.-Icon)
-- [10. Footnote](#10.-Footnote)
+- [0. Principle](#0-Principle)
+- [1. Table](#1-Table)
+- [2. Annotations](#2-Annotations)
+  - [2.1 Draft Annotation](#21-Draft-Annotation)
+  - [2.2 TO-DO Annotation](#22-TO-DO-Annotation)
+  - [2.3 Index Annotation](#23-index-Annotation)
+- [3. Timeline](#3-Timeline)
+- [4. Column](#4-Column)
+- [5. Card](#5-Card)
+- [6. Macro](#6-Macro)
+  - [6.1 Table of Contents](#61-table-of-contents)
+  - [6.2 Index](#62-Index)
+- [7. Insert](#7-Insert)
+- [8. Fold](#8-Fold)
+- [9. Icon](#9-Icon)
+- [10. Footnote](#10-Footnote)
 ---
 
 ## Writing Rule
