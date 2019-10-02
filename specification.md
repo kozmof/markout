@@ -1,5 +1,5 @@
 # [Draft] Markout Specification v0.2.1
-Last revision: 2019-10-02
+Last revision: 2019-10-03
 
 ## Table of Contents
 - [0. Principle](#0-Principle)
@@ -35,7 +35,7 @@ false : boolean false
 - File extension: .mo
 - Practical useability
 - Structured Data
-- Parse-able
+- Simply parseable
 - Easily detect error syntax 
 
 
@@ -63,7 +63,7 @@ false : boolean false
 
 
 ## 2. Annotations
-Annotations are not rendered. They are used as a meta data.
+Annotations are not rendered. They are used as meta data.
 ### Types
 1. Draft
 2. TODO
