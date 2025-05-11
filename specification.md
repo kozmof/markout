@@ -24,7 +24,7 @@ false : boolean false
 - File extension: .mo
 - Practical useability
 - Semi structured data
-- Simply parseable
+- Simply parsable
 - Easily detect syntax errors
 
 
