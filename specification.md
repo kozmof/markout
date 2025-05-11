@@ -23,7 +23,7 @@ false : boolean false
 ## 0. Principle
 - File extension: .mo
 - Practical useability
-- Semi structured Data
+- Semi structured data
 - Simply parseable
 - Easily detect error syntax 
 
@@ -47,7 +47,7 @@ false : boolean false
 ```
 
 ### implementation
-- TypeScript: https://github.com/kozmof/markout/blob/master/implementations/ts/TableParser.ts
+- TypeScript: https://github.com/kozmof/markout/blob/master/implementations/ts/tableParser.ts
 
 
 ## 2. Annotations
