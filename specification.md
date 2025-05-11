@@ -1,4 +1,4 @@
-# [Draft] Markout Specification v0.2.1
+# [Draft] Markout Specification v0.3.0
 Last revision: 2025-05-11
 
 ## Table of Contents
