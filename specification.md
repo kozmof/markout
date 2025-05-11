@@ -1,4 +1,4 @@
-# [Draft] Markout Specification 0.3.0
+# [Draft] Markout Specification 0.4.0
 Last revision: 2025-05-12
 
 ## Table of Contents
@@ -65,16 +65,21 @@ this is a draft section.
 
 !draft end
 ```
+```
+!rev 2025-05-12
+### Example
+this is a draft section.
+```
 
 ## 3. Timeline
 ### Syntax 1
 ```
-- [YYYY/mm/dd H:M:S] <text>
+- [YYYY-mm-dd H:M:S] <text>
 ```
 
 ### Syntax 2
 ```
-- [YYYY/mm/dd] <text>
+- [YYYY-mm-dd] <text>
 ```
 
 ### Syntax 3
