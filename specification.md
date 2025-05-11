@@ -1,29 +1,18 @@
 # [Draft] Markout Specification v0.2.1
-Last revision: 2019-10-03
+Last revision: 2025-05-11
 
 ## Table of Contents
 - [0. Principle](#0-Principle)
 - [1. Table](#1-Table)
 - [2. Annotations](#2-Annotations)
-  - [2.1 Draft Annotation](#21-Draft-Annotation)
-  - [2.2 TO-DO Annotation](#22-TO-DO-Annotation)
-  - [2.3 Index Annotation](#23-index-Annotation)
 - [3. Timeline](#3-Timeline)
-- [4. Column](#4-Column)
-- [5. Card](#5-Card)
-- [6. Macro](#6-Macro)
-  - [6.1 Table of Contents](#61-table-of-contents)
-  - [6.2 Index](#62-Index)
-- [7. Insert](#7-Insert)
-- [8. Fold](#8-Fold)
-- [9. Icon](#9-Icon)
-- [10. Footnote](#10-Footnote)
+- [4. Card](#4-Card)
+- [5. Footnote](#5-Footnote)
 ---
 
 ## Writing Rule
 ```
-<variable_name> : variable which is named as variable_name
-HEADER : headers
+<text> : text
 PATH : path
 true : boolean true
 false : boolean false
@@ -34,14 +23,13 @@ false : boolean false
 ## 0. Principle
 - File extension: .mo
 - Practical useability
-- Structured Data
+- Semi structured Data
 - Simply parseable
 - Easily detect error syntax 
 
 
 ## 1. Table
-### Format
-#### Base
+### Syntax
 ```
 =
 : header_name_a
@@ -63,148 +51,52 @@ false : boolean false
 
 
 ## 2. Annotations
-Annotations are not rendered. They are used as meta data.
-### Types
-1. Draft
-2. TODO
-3. Index
-### implementation
-- TypeScript: 
+Annotations are **not** rendered. They are used as meta data.
 
-## 2.1 Draft Annotation
-### Format
+### Syntax
 ```
-!draft
-HEADER
+!<text> <text>
 ```
-### Examle
+### Example
 ```
-!draft
+!draft start
 ### Example
 this is a draft section.
-```
-### implementation
-- TypeScript: 
 
-## 2.2 TO-DO Annotation
-### Format
+!draft end
 ```
-!TODO <text>
-```
-### implementation
-- TypeScript: 
-
-## 2.3 Index Annotation
-### Format
-```
-!{<term>}
-```
-
-### implementation
-- TypeScript: 
 
 ## 3. Timeline
-### Format 1
+### Syntax 1
 ```
 - [YYYY/mm/dd H:M:S] <text>
 ```
 
-### Format 2
+### Syntax 2
 ```
 - [YYYY/mm/dd] <text>
 ```
 
-### Format 3
+### Syntax 3
 ```
 - [H:M:S] <text>
 ```
 
-### implementation
-- TypeScript: 
-
-## 4. Column
-### Format
+## 4. Card
+### Syntax
 ```
-!{
-<text 1>
-}-{
-<text 2>
-}-{
-<text 3>
-}!
-
-```
-### implementation
-- TypeScript: 
-
-## 5. Card
-### Format
-```
-![
+[[
 <text>
-]!
+]]
 ```
-
-### implementation
-- TypeScript: 
-
-## 6. Macro
-### Types
-- table of contents
-- index
-
-## 6.1 Table of Contents
-### Format
+## 5. Footnote 
+### Syntax
 ```
-table_of_contents!(HEADER)
+(<text>)[<unsigned_number>]
+[<unsinged_number>] <text>
 ```
-### implementation
-- TypeScript: 
-
-## 6.2 Index
-Render annotated terms
-### Format
+### Example
 ```
-index!()
+(foo)[1]
+[1] foo has no meaning
 ```
-### implementation
-- TypeScript: 
-
-## 7. Insert
-### Format
-```
-=>[PATH]
-```
-```
-\insert(PATH)
-```
-### implementation
-- TypeScript: 
-
-## 8. Fold
-### Format
-```
-\fold(true)
-HEADER
-```
-### implementation
-- TypeScript: 
-
-## 9. Icon
-### Format
-```
-\import('custom_icons')
-:expression:
-```
-### implementation
-- TypeScript: 
-
-## 10. Footnote 
-### Format
-```
-<text>[i<unsigned_number>]
-[i<u>] <text>
-```
-### implementation
-- TypeScript: 
----
