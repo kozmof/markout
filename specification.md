@@ -25,7 +25,7 @@ false : boolean false
 - Practical useability
 - Semi structured data
 - Simply parseable
-- Easily detect error syntax 
+- Easily detect syntax errors
 
 
 ## 1. Table
