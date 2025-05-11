@@ -7,9 +7,9 @@ type TableParseCondition = {
   tableWidth: number;
 }
 
-export const tableParser = (lines: Array<string>): Array<Array<string>> => {
-  const table: Array<Array<string>> = [];
-  let row: Array<string> = [];
+export const tableParser = (lines: string[]): string[][] => {
+  const table: string[][] = [];
+  let row: string[] = [];
 
   const pc: TableParseCondition = {
     tableStart: false,
@@ -36,7 +36,7 @@ export const tableParser = (lines: Array<string>): Array<Array<string>> => {
       continue;
     } else if (!pc.headerStart && pc.tableStart) {
       return []
-    } 
+    }
 
     if (line.match(itemPattern) && pc.headerStart && !pc.headerEnd && pc.tableStart) {
       row.push(line.slice(2));

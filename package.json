@@ -1,0 +1,22 @@
+{
+  "name": "markout",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Yet another Markup.",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kozmof/markout.git"
+  },
+  "author": "Kozo Oeda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kozmof/markout/issues"
+  },
+  "homepage": "https://github.com/kozmof/markout#readme",
+  "devDependencies": {
+    "vitest": "^3.1.3"
+  }
+}
