@@ -1,5 +1,5 @@
-# [Draft] Markout Specification 0.4.0
-Last revision: 2025-05-12
+# [Draft] Markout Specification 0.5.0
+Last revision: 2025-05-14
 
 ## Table of Contents
 - [0. Principle](#0-Principle)
@@ -8,15 +8,14 @@ Last revision: 2025-05-12
 - [3. Timeline](#3-Timeline)
 - [4. Card](#4-Card)
 - [5. Footnote](#5-Footnote)
+- [6. Label](#6-Label)
 ---
 
 ## Writing Rule
 ```
 <text> : text
-PATH : path
-true : boolean true
-false : boolean false
 <unsigned_number> : 0, 1, 2, 3, 4, 5...
+... : repeat
 ```
 ---
 
@@ -32,17 +31,17 @@ false : boolean false
 ### Syntax
 ```
 =
-: header_name_a
-: header_name_b
-: header_name_c
+: <header_name_a>
+: <header_name_b>
+: <header_name_c>
 =
-: content_a_1
-: content_b_1
-: content_c_1
+: <content_a_1>
+: <content_b_1>
+: <content_c_1>
 -
-: content_a_2
-: content_b_2
-: content_c_2
+: <content_a_2>
+: <content_b_2>
+: <content_c_2>
 -
 ```
 
@@ -55,18 +54,18 @@ Annotations are **not** rendered. They are used as meta data.
 
 ### Syntax
 ```
-!<text> <text>
+>> <text>
 ```
 ### Example
 ```
-!draft start
+>> draft start
 ### Example
 this is a draft section.
 
-!draft end
+>> draft end
 ```
 ```
-!rev 2025-05-12
+>> rev 2025-05-12
 ### Example
 this is a draft section.
 ```
@@ -97,11 +96,22 @@ this is a draft section.
 ## 5. Footnote 
 ### Syntax
 ```
-(<text>)[<unsigned_number>]
-[<unsinged_number>] <text>
+(<text>)[^<unsigned_number>]
+[^<unsinged_number>] <text>
 ```
 ### Example
 ```
-(foo)[1]
-[1] foo has no meaning
+(foo)[^1]
+[^1] foo has no meaning
+```
+
+## 6. Label
+### Syntax
+```
+- [#<text>]... <text>
+```
+
+### Example
+```
+- [#TODO][#UI] create a side panel
 ```
