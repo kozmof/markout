@@ -1,4 +1,4 @@
-# [Draft] Markout Specification 0.6.0
+# [Draft] Markout Specification 0.7.0
 Last revision: 2025-05-15
 
 ## Table of Contents
@@ -75,18 +75,18 @@ Annotations are **not** rendered. They are used as metadata.
 
 ### Syntax
 ```
->> <text>
+|> <text>
 ```
 ### Example
 ```
->> draft start
+|> draft start
 ### Example
 this is a draft section.
 
->> draft end
+|> draft end
 ```
 ```
->> rev 2025-05-12
+|> rev 2025-05-12
 ### Example
 this is a draft section.
 ```
@@ -153,7 +153,7 @@ this is a draft section.
 ```
 ### Example
 ```
-{#notice test}
+This is a normal text with a {#notice highlighted section}.
 ```
 
 ## 8. JSON Metadata
