@@ -151,13 +151,14 @@ this is a draft section.
 ```
 {#<color_name> <text>}
 ```
+### Example
 ```
 {#notice test}
 ```
 
 ## 8. JSON Metadata
-Metadata is **not** rendered.\
-Metadata must be placed either at the beginning or the end of the file.
+JSON Metadata is **not** rendered.\
+JSON Metadata must be placed either at the beginning or the end of the file.
 ### Syntax
 ```
 __{ JSON }__
