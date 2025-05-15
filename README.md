@@ -8,3 +8,4 @@ Yet another Markup.
 - 2025-05-11: Simplify the draft (0.3.0).
 - 2025-05-12: 0.4.0 is out.
 - 2025-05-14: 0.5.0 is out.
+- 2025-05-15: 0.6.0 is out.

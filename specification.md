@@ -1,5 +1,5 @@
-# [Draft] Markout Specification 0.5.0
-Last revision: 2025-05-14
+# [Draft] Markout Specification 0.6.0
+Last revision: 2025-05-15
 
 ## Table of Contents
 - [0. Principle](#0-Principle)
@@ -9,12 +9,17 @@ Last revision: 2025-05-14
 - [4. Card](#4-Card)
 - [5. Footnote](#5-Footnote)
 - [6. Label](#6-Label)
+- [7. Marker](#7-Marker)
+- [8. JSON Metadata](#8-JSON-Metadata)
+- [9. Link](#9-Link)
 ---
 
 ## Writing Rule
 ```
 <text> : text
 <unsigned_number> : 0, 1, 2, 3, 4, 5...
+<color_name>: color name
+{ JSON }: JSON
 ... : repeat
 ```
 ---
@@ -31,18 +36,34 @@ Last revision: 2025-05-14
 ### Syntax
 ```
 =
-: <header_name_a>
-: <header_name_b>
-: <header_name_c>
+: <text>
+...
 =
-: <content_a_1>
-: <content_b_1>
-: <content_c_1>
+: <text>
+...
 -
-: <content_a_2>
-: <content_b_2>
-: <content_c_2>
+...
+```
+### Example
+```
+=
+: fruits
+: grams
+: amount
+=
+: apple
+: 170
+: 40
 -
+: orange
+: 140
+: 20
+-
+: cherry 
+: 10
+: 50
+-
+
 ```
 
 ### implementation
@@ -50,7 +71,7 @@ Last revision: 2025-05-14
 
 
 ## 2. Annotations
-Annotations are **not** rendered. They are used as meta data.
+Annotations are **not** rendered. They are used as metadata.
 
 ### Syntax
 ```
@@ -91,6 +112,15 @@ this is a draft section.
 ```
 [[
 <text>
+]...]
+```
+```
+[[
+  ## Document
+  See this link: ...
+][
+  ## Q&A
+  See this link: ...
 ]]
 ```
 ## 5. Footnote 
@@ -114,4 +144,39 @@ this is a draft section.
 ### Example
 ```
 - [#TODO][#UI] create a side panel
+```
+
+## 7. Marker
+### Syntax
+```
+{#<color_name> <text>}
+```
+```
+{#notice test}
+```
+
+## 8. JSON Metadata
+Metadata is **not** rendered.\
+Metadata must be placed either at the beginning or the end of the file.
+### Syntax
+```
+__{ JSON }__
+```
+### Example
+```
+__{
+  "color-name": {
+    "notice": "#ffeb87"
+  }
+}__
+```
+
+## 9. Link
+### Syntax
+```
+<#<text>|<link>>
+```
+### Example
+```
+<#GitHub|https://github.com>
 ```
