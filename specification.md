@@ -1,5 +1,5 @@
-# [Draft] Markout Specification 0.7.0
-Last revision: 2025-05-15
+# [Draft] Markout Specification 0.8.0
+Last revision: 2025-05-27
 
 ## Table of Contents
 - [0. Principle](#0-Principle)
@@ -12,6 +12,9 @@ Last revision: 2025-05-15
 - [7. Marker](#7-Marker)
 - [8. JSON Metadata](#8-JSON-Metadata)
 - [9. Link](#9-Link)
+- [10. Line Breaks](#10-Line-Breaks)
+- [11. New Paragraphs](#11-New-Paragraphs)
+
 ---
 
 ## Writing Rule
@@ -180,4 +183,31 @@ __{
 ### Example
 ```
 <#GitHub|https://github.com>
+```
+
+## 10. Line Breaks
+### Syntax
+```
+\n
+```
+
+### Example
+```
+Paragraph 1_a
+|> this is the same paragraph
+Paragraph 1_b
+```
+
+## 11. New Paragraphs
+### Syntax
+```
+\n\n
+```
+
+### Example
+```
+Paragraph 1
+
+|> this is a new paragraph
+Paragraph 2
 ```
