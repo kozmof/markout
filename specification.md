@@ -1,5 +1,5 @@
-# [Draft] Markout Specification 0.8.0
-Last revision: 2025-05-27
+# [Draft] Markout Specification 0.9.0
+Last revision: 2025-06-04
 
 ## Table of Contents
 - [0. Principle](#0-Principle)
@@ -62,7 +62,7 @@ Last revision: 2025-05-27
 : 140
 : 20
 -
-: cherry 
+: cherry
 : 10
 : 50
 -
@@ -80,13 +80,17 @@ Annotations are **not** rendered. They are used as metadata.
 ```
 |> <text>
 ```
+```
+|start|> <text>
+|end|> <text>
+```
 ### Example
 ```
-|> draft start
+|start|> draft
 ### Example
 this is a draft section.
 
-|> draft end
+|end|> draft
 ```
 ```
 |> rev 2025-05-12
@@ -126,7 +130,7 @@ this is a draft section.
   See this link: ...
 ]]
 ```
-## 5. Footnote 
+## 5. Footnote
 ### Syntax
 ```
 (<text>)[^<unsigned_number>]
